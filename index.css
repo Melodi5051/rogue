@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+}
+body {
+  background-color: #000000;
+  color: #ffffff;
+}
+h1 {
+  font-family: "Playfair Display";
+  font-size: 30px;
+  padding: 10px 0px;
+  margin: 0px;
+}
+.field-box {
+  border: 2px solid #d0d0d0;
+  float: left;
+}
+.field {
+  position: relative;
+  width: 1003px;
+  height: 603px;
+}
+.field .tile,
+.tileW,
+.tileE,
+.tileHP,
+.tileP,
+.tileSW {
+  position: absolute;
+  width: 25.6px;
+  height: 25.6px;
+  background-size: 100%;
+}
+.field .tile {
+  background-image: url(images/tile-.png);
+  z-index: 5;
+}
+.field .tileW {
+  background-image: url(images/tile-W.png);
+}
+.field .tileE {
+  background-image: url(images/tile-E.png);
+  z-index: 10;
+}
+.field .tileP {
+  background-image: url(images/tile-P.png);
+  z-index: 10;
+}
+.field .tileHP {
+  background-image: url(images/tile-HP.png);
+  z-index: 9;
+}
+.field .tileSW {
+  background-image: url(images/tile-SW.png);
+  z-index: 9;
+}
+.field .tileE .health {
+  background-color: #ff0000;
+  z-index: 11;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 3px;
+}
+.field .tileP .health {
+  background-color: #00ff00;
+  z-index: 11;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 3px;
+}
+.inventory-box {
+  border: 2px solid #d0d0d0;
+  float: left;
+}
+.inventory {
+  position: relative;
+  width: 800px;
+  height: 32px;
+}
+.cl {
+  clear: both;
+  display: block;
+}
